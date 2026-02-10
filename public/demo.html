@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request a Demo — Rastera</title>
-  <meta name="description" content="Request a demo of Rastera. See how GeoAI-powered raster analysis can accelerate your geospatial workflows." />
+  <meta name="description" content="Request a demo of Rastera or join the waitlist. See how locational and behavioral intelligence can power your strategic decisions." />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Request a Demo — Rastera" />
-  <meta property="og:description" content="See how GeoAI-powered raster analysis can accelerate your geospatial workflows." />
+  <meta property="og:description" content="See how locational and behavioral intelligence can power your strategic decisions." />
   <meta property="og:url" content="https://rastera.io/demo" />
   <meta property="og:image" content="https://rastera.io/og-image.png" />
 
@@ -19,140 +19,202 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ── Nav ──────────────────────────────────────────── -->
+  <!-- ── Nav ──────────────────────────────────────────────── -->
   <nav class="nav">
     <div class="container">
-      <a href="index.html" class="nav-logo">Rastera<span>.</span></a>
+      <a href="index.html" class="nav-logo">Rastera</a>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#capabilities">Product</a></li>
         <li><a href="index.html#use-cases">Use Cases</a></li>
         <li><a href="mailto:aswin@rastera.io" class="nav-cta">Email Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ── Demo Section ─────────────────────────────────── -->
-  <section class="demo-page">
+  <!-- ── Demo Hero ────────────────────────────────────────── -->
+  <section class="demo-hero">
     <div class="container">
-      <div class="demo-layout">
-
-        <!-- Left column: Info -->
-        <div class="demo-info">
-          <p class="section-label">Get Started</p>
-          <h1>Request a Demo</h1>
-          <p>See Rastera in action. We'll walk you through the platform and show you how to go from raw rasters to actionable insights in minutes.</p>
-
-          <ul class="demo-perks">
-            <li>
-              <span class="check">&#10003;</span>
-              Personalized walkthrough of the platform
-            </li>
-            <li>
-              <span class="check">&#10003;</span>
-              See analysis workflows on your own data
-            </li>
-            <li>
-              <span class="check">&#10003;</span>
-              Q&amp;A with the engineering team
-            </li>
-            <li>
-              <span class="check">&#10003;</span>
-              No commitment required
-            </li>
-          </ul>
-
-          <!-- Calendly placeholder -->
-          <div class="calendly-placeholder">
-            <p>Prefer to book directly?</p>
-            <!--
-              TODO: Replace with your Calendly embed or link.
-              Example inline embed:
-              <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_LINK" style="min-width:300px;height:500px;"></div>
-              <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-              Or use a simple link:
-            -->
-            <a href="#" class="btn btn-secondary" onclick="alert('Replace this with your Calendly link'); return false;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              Book on Calendly
-            </a>
-          </div>
-        </div>
-
-        <!-- Right column: Form -->
-        <div class="form-card">
-          <h2>Tell us about your needs</h2>
-
-          <!--
-            TODO: Replace the action URL with your Formspree endpoint.
-            1. Go to https://formspree.io and create a form.
-            2. Copy the form endpoint (e.g., https://formspree.io/f/xyzabcde).
-            3. Paste it into the action attribute below.
-          -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Jane Smith" />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Work Email *</label>
-              <input type="email" id="email" name="email" required placeholder="jane@company.com" />
-            </div>
-
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="Acme Geospatial" />
-            </div>
-
-            <div class="form-group">
-              <label for="use-case">Primary Use Case</label>
-              <select id="use-case" name="use_case">
-                <option value="" disabled selected>Select a use case</option>
-                <option value="flood-screening">Flood Screening</option>
-                <option value="ndvi-vegetation">NDVI / Vegetation Analysis</option>
-                <option value="change-detection">Change Detection</option>
-                <option value="site-suitability">Site Suitability</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us about your project or what you'd like to see in the demo..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary form-submit">Submit Request &rarr;</button>
-          </form>
-        </div>
-
-      </div>
+      <div class="badge"><span class="dot"></span> Early access</div>
+      <h1>Get Started with Rastera</h1>
+      <p>Request a personalized demo or join the waitlist for early access. We'll show you how locational intelligence transforms strategic decisions.</p>
     </div>
   </section>
 
-  <!-- ── Footer ───────────────────────────────────────── -->
+  <!-- ── Demo Sections ────────────────────────────────────── -->
+  <section class="demo-sections">
+    <div class="container">
+
+      <!-- Section A: Request Demo -->
+      <div id="demo" class="demo-form-section">
+        <div class="demo-grid">
+          <div class="form-info">
+            <p class="section-label">Request a Demo</p>
+            <h3>See Rastera in action</h3>
+            <p>We'll walk you through the platform, show real-world use cases, and explore how Rastera can support your specific needs.</p>
+
+            <ul class="form-perks">
+              <li><span class="perk-check">&#10003;</span> Personalized walkthrough of the platform</li>
+              <li><span class="perk-check">&#10003;</span> Analysis demo on real geospatial data</li>
+              <li><span class="perk-check">&#10003;</span> Q&amp;A with the founding team</li>
+              <li><span class="perk-check">&#10003;</span> No commitment required</li>
+            </ul>
+
+            <!-- Calendly placeholder -->
+            <div class="calendly-box">
+              <p>Prefer to book directly?</p>
+              <!--
+                TODO: Replace with your Calendly embed or link.
+                Example inline embed:
+                <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_LINK" style="min-width:300px;height:500px;"></div>
+                <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+                Or use a simple link button:
+              -->
+              <a href="#" class="btn btn-secondary btn-sm" onclick="alert('Replace this href with your Calendly link'); return false;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Book on Calendly
+              </a>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Request a Demo</h2>
+            <!--
+              TODO: Replace YOUR_FORMSPREE_ENDPOINT with your Formspree form URL.
+              1. Go to https://formspree.io and create a new form.
+              2. Copy the endpoint (e.g., https://formspree.io/f/xyzabcde).
+              3. Paste it into the action attribute below.
+            -->
+            <form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+              <input type="hidden" name="_form" value="demo-request" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="demo-name">Full Name *</label>
+                  <input type="text" id="demo-name" name="name" required placeholder="Jane Smith" />
+                </div>
+                <div class="form-group">
+                  <label for="demo-email">Work Email *</label>
+                  <input type="email" id="demo-email" name="email" required placeholder="jane@company.com" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="demo-company">Company</label>
+                  <input type="text" id="demo-company" name="company" placeholder="Acme Corp" />
+                </div>
+                <div class="form-group">
+                  <label for="demo-role">Role</label>
+                  <input type="text" id="demo-role" name="role" placeholder="VP of Strategy" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="demo-usecase">Primary Use Case</label>
+                <select id="demo-usecase" name="use_case">
+                  <option value="" disabled selected>Select a use case</option>
+                  <option value="retail-expansion">Retail &amp; Franchise Expansion</option>
+                  <option value="investment-dd">Investment Due Diligence</option>
+                  <option value="infrastructure">Infrastructure &amp; Utilities</option>
+                  <option value="climate-env">Climate &amp; Environmental Intelligence</option>
+                  <option value="real-estate">Real Estate &amp; Urban Planning</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="demo-message">Message</label>
+                <textarea id="demo-message" name="message" placeholder="Tell us about your project or what you'd like to see in the demo..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Request Demo</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="demo-divider">
+        <p class="section-label">Or</p>
+      </div>
+
+      <!-- Section B: Join Waitlist -->
+      <div id="waitlist" class="demo-form-section">
+        <div class="demo-grid">
+          <div class="form-info">
+            <p class="section-label">Join the Waitlist</p>
+            <h3>Be first in line</h3>
+            <p>Not ready for a demo? Join the waitlist and we'll notify you when new features launch or when your industry vertical becomes available.</p>
+
+            <ul class="form-perks">
+              <li><span class="perk-check">&#10003;</span> Priority access to new features</li>
+              <li><span class="perk-check">&#10003;</span> Monthly product updates</li>
+              <li><span class="perk-check">&#10003;</span> Unsubscribe anytime</li>
+            </ul>
+          </div>
+
+          <div class="form-card">
+            <h2>Join Waitlist</h2>
+            <!--
+              TODO: Replace YOUR_FORMSPREE_ENDPOINT with your Formspree form URL.
+              You can use the same endpoint as the demo form, or create a separate one.
+            -->
+            <form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+              <input type="hidden" name="_form" value="waitlist" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="wl-name">Full Name *</label>
+                  <input type="text" id="wl-name" name="name" required placeholder="Jane Smith" />
+                </div>
+                <div class="form-group">
+                  <label for="wl-email">Work Email *</label>
+                  <input type="email" id="wl-email" name="email" required placeholder="jane@company.com" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="wl-company">Company</label>
+                <input type="text" id="wl-company" name="company" placeholder="Acme Corp" />
+              </div>
+              <div class="form-group">
+                <label for="wl-interest">What interests you most?</label>
+                <select id="wl-interest" name="interest">
+                  <option value="" disabled selected>Select your interest</option>
+                  <option value="site-selection">Site Selection &amp; Expansion</option>
+                  <option value="behavioral-analytics">Behavioral Analytics</option>
+                  <option value="risk-assessment">Risk Assessment</option>
+                  <option value="market-intelligence">Market Intelligence</option>
+                  <option value="climate-data">Climate &amp; Environmental Data</option>
+                  <option value="general">General Interest</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Join Waitlist</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-brand">Rastera<span>.</span></div>
+        <div class="footer-brand">Rastera</div>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="demo.html">Request Demo</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
           <li><a href="mailto:aswin@rastera.io">Contact</a></li>
         </ul>
       </div>
-      <p class="footer-copy">&copy; 2025 Rastera. All rights reserved.</p>
+      <p class="footer-legal">&copy; 2025 Rastera. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
