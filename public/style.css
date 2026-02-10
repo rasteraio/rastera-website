@@ -25,9 +25,10 @@
    20. Demo Page
    21. Forms
    22. Privacy / Legal Page
-   23. Team Page
-   24. Animations & Micro-interactions
-   25. Responsive
+   23. About Page
+   24. Team Page
+   25. Animations & Micro-interactions
+   26. Responsive
    ═══════════════════════════════════════════════════════════ */
 
 /* ── 1. Tokens & Variables ───────────────────────────────── */
@@ -1512,7 +1513,166 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--clr-blue);
 }
 
-/* ── 23. Team Page ───────────────────────────────────────── */
+/* ── 23. About Page ──────────────────────────────────────── */
+.about-hero {
+  padding: 140px 0 40px;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: var(--gradient-glow);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero .section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.about-prose {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-prose p {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.about-split {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 64px;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-split--reverse {
+  direction: ltr;
+}
+
+.about-split-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.about-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--clr-indigo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-icon-wrap--violet {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--clr-violet);
+}
+
+.about-split-content {
+  max-width: 600px;
+}
+
+.about-heading {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.about-split-content p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.about-credibility {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+}
+
+.about-credibility-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(52, 211, 153, 0.1);
+  color: var(--clr-emerald);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-credibility p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.about-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 130px 0 24px;
+  }
+
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-credibility {
+    padding: 28px 24px;
+  }
+
+  .about-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── 24. Team Page ───────────────────────────────────────── */
 .team-hero {
   padding: 140px 0 40px;
   text-align: center;
@@ -1644,7 +1804,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ── 24. Animations & Micro-interactions ────────────────── */
+/* ── 25. Animations & Micro-interactions ────────────────── */
 
 /* Fade-in on scroll (JS-driven) */
 .reveal {
@@ -1691,7 +1851,7 @@ h1, h2, h3, h4, h5, h6 {
 .reveal-stagger.visible .use-case-card:nth-child(5) { transition-delay: 0.32s; }
 .reveal-stagger.visible .card:nth-child(6) { transition-delay: 0.4s; }
 
-/* ── 25. Responsive ──────────────────────────────────────── */
+/* ── 26. Responsive ──────────────────────────────────────── */
 @media (max-width: 1024px) {
   .mockup-body {
     grid-template-columns: 1fr;
