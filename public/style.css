@@ -515,6 +515,58 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
+/* ── 11b. Social Proof Bar ───────────────────────────────── */
+.proof-bar {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.proof-header {
+  flex-shrink: 0;
+}
+
+.proof-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.proof-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.proof-item svg {
+  color: var(--clr-indigo);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .proof-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 24px;
+  }
+  .proof-items {
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
 /* ── 12. Capabilities (What We Do) ───────────────────────── */
 .capabilities-grid {
   display: grid;
