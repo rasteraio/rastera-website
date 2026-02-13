@@ -1804,6 +1804,266 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ── 27. Hero Benefits ──────────────────────────────────── */
+.hero-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-benefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 450;
+  color: var(--text-secondary);
+}
+
+.hero-benefit-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--clr-indigo);
+}
+
+/* ── 28. Problem Statement ─────────────────────────────── */
+.problem-block {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.problem-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.problem-bullet {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px 28px;
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.problem-bullet:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-hover);
+}
+
+.problem-bullet-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(139, 92, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--clr-violet);
+}
+
+.problem-bullet p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* ── 29. Capabilities 5-card grid ──────────────────────── */
+#capabilities {
+  scroll-margin-top: 80px;
+}
+
+#why-rastera {
+  scroll-margin-top: 80px;
+}
+
+.capabilities-grid--5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Center the last 2 cards in a 5-card grid */
+.capabilities-grid--5 .card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+/* ── 30. Use Case Tiles ────────────────────────────────── */
+#use-cases {
+  scroll-margin-top: 80px;
+}
+
+.use-case-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.use-case-tile {
+  text-align: center;
+  padding: 40px 32px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.use-case-tile:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.use-case-tile-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.use-case-tile h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.use-case-tile p {
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* ── 31. Differentiators ───────────────────────────────── */
+.differentiators-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.differentiators-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.differentiators-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1rem;
+  font-weight: 450;
+  color: var(--text-secondary);
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.differentiators-list li:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-hover);
+}
+
+.differentiators-list li svg {
+  flex-shrink: 0;
+  color: var(--clr-emerald);
+}
+
+/* ── 32. Case Study Teaser ─────────────────────────────── */
+.case-study-block {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--gradient-brand-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 64px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-block::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.case-study-block .section-label,
+.case-study-block .section-title {
+  position: relative;
+}
+
+.case-study-body {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto 16px;
+  position: relative;
+}
+
+.case-study-note {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+  font-style: italic;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.case-study-cta {
+  position: relative;
+}
+
+/* ── 33. Founder Credibility Block ─────────────────────── */
+.founder-credibility-block {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.founder-credibility-body {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.founder-credibility-location {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+  letter-spacing: 0.04em;
+}
+
 /* ── 25. Animations & Micro-interactions ────────────────── */
 
 /* Fade-in on scroll (JS-driven) */
@@ -1820,6 +2080,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Staggered card reveal */
 .reveal-stagger .card,
 .reveal-stagger .use-case-card,
+.reveal-stagger .use-case-tile,
 .reveal-stagger .step,
 .reveal-stagger .pillar,
 .reveal-stagger .stat-card {
@@ -1829,6 +2090,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .reveal-stagger.visible .card,
 .reveal-stagger.visible .use-case-card,
+.reveal-stagger.visible .use-case-tile,
 .reveal-stagger.visible .step,
 .reveal-stagger.visible .pillar,
 .reveal-stagger.visible .stat-card {
@@ -1837,16 +2099,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .reveal-stagger.visible .card:nth-child(2),
 .reveal-stagger.visible .use-case-card:nth-child(2),
+.reveal-stagger.visible .use-case-tile:nth-child(2),
 .reveal-stagger.visible .step:nth-child(2),
 .reveal-stagger.visible .pillar:nth-child(2),
 .reveal-stagger.visible .stat-card:nth-child(2) { transition-delay: 0.08s; }
 .reveal-stagger.visible .card:nth-child(3),
 .reveal-stagger.visible .use-case-card:nth-child(3),
+.reveal-stagger.visible .use-case-tile:nth-child(3),
 .reveal-stagger.visible .step:nth-child(3),
 .reveal-stagger.visible .pillar:nth-child(3),
 .reveal-stagger.visible .stat-card:nth-child(3) { transition-delay: 0.16s; }
 .reveal-stagger.visible .card:nth-child(4),
-.reveal-stagger.visible .use-case-card:nth-child(4) { transition-delay: 0.24s; }
+.reveal-stagger.visible .use-case-card:nth-child(4),
+.reveal-stagger.visible .use-case-tile:nth-child(4) { transition-delay: 0.24s; }
 .reveal-stagger.visible .card:nth-child(5),
 .reveal-stagger.visible .use-case-card:nth-child(5) { transition-delay: 0.32s; }
 .reveal-stagger.visible .card:nth-child(6) { transition-delay: 0.4s; }
@@ -1877,6 +2142,10 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 300px;
   }
   .credibility-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .differentiators-layout {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -1923,6 +2192,32 @@ h1, h2, h3, h4, h5, h6 {
   .pillars {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .capabilities-grid--5 {
+    grid-template-columns: 1fr;
+  }
+
+  .use-case-tiles {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .differentiators-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .case-study-block {
+    padding: 48px 24px;
+    border-radius: var(--radius-lg);
+  }
+
+  .hero-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   .cta-block {
