@@ -1678,7 +1678,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── 24. Team Page ───────────────────────────────────────── */
 .team-hero {
-  padding: 140px 0 40px;
+  padding: 84px 0 24px;
   text-align: center;
   position: relative;
 }
@@ -1804,7 +1804,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .team-hero {
-    padding: 130px 0 24px;
+    padding: 78px 0 14px;
   }
 }
 
