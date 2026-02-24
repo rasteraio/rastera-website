@@ -58,6 +58,76 @@
     </div>
   </section>
 
+  <!-- ── Live Analysis Tool ───────────────────────────────── -->
+  <section class="section live-demo-section" id="try-live">
+    <div class="container" style="text-align:center;">
+      <p class="section-label">Live Analysis</p>
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3.5vw,2.4rem);letter-spacing:-0.03em;margin-bottom:12px;">Analyze Any Location</h2>
+      <p style="color:var(--text-tertiary);font-size:1rem;line-height:1.7;max-width:560px;margin:0 auto 40px;">Enter a real address and get an instant AI-powered site intelligence report — scored, narrated, and downloadable as a PDF.</p>
+
+      <!-- Input form -->
+      <div class="form-card" style="max-width:640px;margin:0 auto 24px;text-align:left;">
+        <form id="live-demo-form" novalidate>
+          <div class="form-group">
+            <label for="demo-address">Address</label>
+            <input id="demo-address" type="text" required autocomplete="off"
+              placeholder="e.g. 540 N Michigan Ave, Chicago, IL" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="demo-industry">Industry</label>
+              <select id="demo-industry">
+                <option value="coffee">Coffee Shop</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="retail">Retail</option>
+                <option value="grocery">Grocery</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="demo-radius">Trade Area</label>
+              <select id="demo-radius">
+                <option value="800">800 m (~0.5 mi)</option>
+                <option value="1600" selected>1,600 m (~1 mi)</option>
+                <option value="3200">3,200 m (~2 mi)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" id="demo-submit" class="btn btn-primary form-submit">
+            Analyze Location
+          </button>
+        </form>
+      </div>
+
+      <!-- Error state -->
+      <div id="demo-error" class="demo-error" hidden></div>
+
+      <!-- Results panel -->
+      <div id="demo-results" class="demo-results" hidden>
+        <div class="demo-score-row">
+          <div class="score-gauge">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <circle class="gauge-track" cx="50" cy="50" r="42"/>
+              <circle class="gauge-fill" id="gauge-arc" cx="50" cy="50" r="42"/>
+            </svg>
+            <span class="gauge-value" id="demo-score-val">—</span>
+          </div>
+          <div class="demo-score-meta">
+            <p class="section-label" id="demo-address-label"></p>
+            <div class="demo-score-headline" id="demo-score-headline"></div>
+          </div>
+        </div>
+        <div class="demo-drivers" id="demo-drivers"></div>
+        <div class="demo-ai" id="demo-ai"></div>
+        <button id="demo-pdf-btn" class="btn btn-secondary" style="max-width:640px;margin:0 auto;display:flex;align-items:center;gap:8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Full PDF Report
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- ── Demo Sections ────────────────────────────────────── -->
   <section class="demo-sections">
     <div class="container">
@@ -209,5 +279,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="demo.js"></script>
 </body>
 </html>
