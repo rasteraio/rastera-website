@@ -30,6 +30,12 @@
       return;
     }
 
+    const password = document.getElementById("demo-password").value;
+    if (password !== "gVYJP108!KRSNA") {
+      showError("Incorrect password.");
+      return;
+    }
+
     const industryTemplate = document.getElementById("demo-industry").value;
     const radiusM = parseInt(document.getElementById("demo-radius").value, 10);
 
