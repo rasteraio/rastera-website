@@ -38,7 +38,7 @@
       () => {
         const scrollY = window.scrollY;
         if (scrollY > 60) {
-          nav.style.background = "rgba(6, 8, 15, 0.92)";
+          nav.style.background = "rgba(7, 9, 16, 0.94)";
         } else {
           nav.style.background = "";
         }
